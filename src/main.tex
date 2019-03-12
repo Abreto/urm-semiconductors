@@ -1,0 +1,32 @@
+% Main Structure
+\documentclass[UTF8]{ctexbook}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\makeindex
+
+\newcommand\diffd{\mathrm{d}}
+\newcommand\diff[2]{
+    \frac{\diffd {#1}}{\diffd {#2}}
+}
+\newcommand\ddiff[2]{
+    \frac{\diffd^2 {#1}}{\diffd {#2}^2}
+}
+
+\begin{document}
+\graphicspath{{figures/}}
+\title{《半导体物理学》复习材料}
+\author{孑枵\thanks{E-mail: m@abreto.net}}
+\frontmatter
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+\input{part0}
+
+\end{document}

@@ -1,0 +1,44 @@
+% Section 1-6
+\section{半导体器件基本方程}
+
+半导体器件内的载流子在外场作用下的运动规律可以用一套基本方程来加以描述，
+是分析一切半导体器件的基本数学工具，
+由三组方程所组成：麦克斯韦方程组、输运方程组和连续性方程组。
+
+\subsection{泊松方程}
+泊松方程原始形式：
+\begin{equation}
+    \nabla \cdot \boldsymbol{D} = \rho_V(x,y,z)
+\end{equation}
+其中 $\boldsymbol{D}$ 代表电位移矢量；$\rho_V(x,y,z)$ 代表自由电荷的体密度。
+
+在半导体中，$\rho_V=q(p-n+N_D-N_A)$；
+静态或低频下，$\boldsymbol{D}=\varepsilon_s\boldsymbol{E}$，
+$\varepsilon_s$ 代表半导体的电容率，
+$\boldsymbol{E}$ 代表电场强度矢量，再考虑到 $\nabla \psi = -\boldsymbol{E}$，
+得到：
+\begin{equation}
+    \nabla \cdot \boldsymbol{E} = -\nabla^2\psi
+    = {q \over \varepsilon_s}(p-n+N_D-N_A)
+\end{equation}
+其中，$\psi$ 代表静电势，$q$ 代表一个电子所带电荷量的绝对值，
+$p$、$n$、$N_D$、$N_A$ 分别代表空穴、电子、电离施主杂质和电离受主杂质的浓度。
+
+泊松方程表明：空间任意点的电位移（或电场强度）矢量的散度正比于该点的电荷密度。
+
+物理意义：电感线总是出发于正电荷而终止于等量的负电荷。
+
+\subsection{输运方程}
+
+又称为电流密度方程：
+\begin{align}
+\boldsymbol{J}_n &= q\mu_nn\boldsymbol{E} + qD_n\nabla{}n \\
+\boldsymbol{J}_p &= q\mu_pp\boldsymbol{E} - qD_p\nabla{}p
+\end{align}
+其中，$\boldsymbol{J}_n$、$\boldsymbol{J}_p$
+分别是电子电流密度矢量和空穴电流密度矢量，
+$D_n$、$D_p$ 分别代表电子和空穴的扩散系数，
+$\mu_n$、$\mu_p$ 分别代表电子和空穴的迁移率。
+
+\vskip5em
+{\Huge \bfseries 未完待续...}
